@@ -728,6 +728,7 @@ describe Synapse::ConfigGenerator::Haproxy do
       allow(mockWatcher).to receive(:name).and_return('example_service')
       backends = [{ 'host' => '10.11.11.11', 'port' => 5555, 'name' => 'somehost1'},
                   { 'host' => '10.22.22.22',   'port' => 5555, 'name' => 'somehost3'},
+                  { 'host' => '10.22.22.22',   'port' => 5555, 'name' => 'somehost3'},
                   { 'host' => '10.10.10.10',   'port' => 5555, 'name' => 'somehost2'}]
       allow(mockWatcher).to receive(:backends).and_return(backends)
       mockWatcher
