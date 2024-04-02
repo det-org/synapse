@@ -1,0 +1,6 @@
+{
+  "sonarlint.connectedMode.project": {
+    "connectionId": "det-org",
+    "projectKey": "det-org_synapse"
+  }
+}
