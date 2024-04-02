@@ -31,7 +31,8 @@ describe Synapse::ServiceWatcher::ZookeeperWatcher do
       'name' => 'server',
       'weight' => '1',
       'haproxy_server_options' => 'backup',
-      'labels' => { 'az' => 'us-east-1a' }
+      'labels2' => { 'az' => 'us-east-1a' },
+      'labels' => { 'az' => 'us-east-1a', 'ba' = 'us-east-1b' },
     }
   end
   let(:config_for_generator_haproxy) do
